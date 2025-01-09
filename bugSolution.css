@@ -1,0 +1,10 @@
+/* Correct usage of calc() */
+#myElement {
+  width: calc(100% - 10px);
+  /* Or using variables for better readability and maintainability */
+  --element-margin: 10px;
+  width: calc(100% - var(--element-margin));
+}
+
+/* Avoid this */
+/* width: calc(100% - 10); // Incorrect: Missing unit for the subtracted value */
